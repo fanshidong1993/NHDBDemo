@@ -18,8 +18,11 @@ public class ReflectUtil {
             e.printStackTrace();  
         }  
         return value;  
-    }  
-      
+    }
+
+    /**
+     * 设置实体类一个成员变量的值
+     */
     public static void setValue(Object entity, String fieldName, Object value) {  
         try {  
             Class<?> clazz = entity.getClass();  
